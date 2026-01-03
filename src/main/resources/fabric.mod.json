@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "webhook_commander",
+  "version": "${version}",
+  "name": "Webhook Commander",
+  "description": "A Fabric mod that opens a webhook HTTP server to receive and execute Minecraft commands via JSON requests. Perfect for TikTok integrations!",
+  "authors": [
+    "TikTok Integration"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/webhook_commander/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.webhookcommander.WebhookCommanderMod"
+    ],
+    "client": [
+      "com.webhookcommander.WebhookCommanderClient"
+    ],
+    "modmenu": [
+      "com.webhookcommander.ModMenuIntegration"
+    ]
+  },
+  "mixins": [],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "~${minecraft_version}",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*",
+    "cloth-config": "*"
+  }
+}
